@@ -18,7 +18,7 @@ async function getPrescript() {
 
 async function getPrescripts() {
     const resp = await fetch("https://cdn.jsdelivr.net/gh/bighardwin10/PrescriptAPI@latest/prescripts.json")
-    return new Response(JSON.stringify({"status": "success","data": await resp.json()}))
+    return new Response(JSON.stringify({"status": "success","data": await resp.json(),"message": "部分指令由Deepseek编写，剩余来自xiaomu1999f-cpu.github.io与nyos.dev"}),{headers: { 'Content-Type': 'application/json','Access-Control-Allow-Origin': '*' }})
 }
 
 export default router
