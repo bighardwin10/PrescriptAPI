@@ -18,7 +18,7 @@ async function getPrescript() {
 
 async function getPrescripts() {
     const resp = await fetch("https://cdn.jsdelivr.net/gh/bighardwin10/PrescriptAPI@latest/prescripts.json")
-    return new Response(JSON.stringify({"status": "success","data": await resp.json}))
+    return new Response(JSON.stringify({"status": "success","data": await resp.json()}))
 }
 
 export default router
