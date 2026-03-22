@@ -1,10 +1,5 @@
 name = "prescriptapi"
 type = "javascript"
 
-account_id = ""
-workers_dev = true
-route = ""
-zone_id = ""
-
 main = "./index.js"
 compatibility_date = "2026-02-25"
